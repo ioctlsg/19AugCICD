@@ -1,4 +1,4 @@
-service: 19thAugCDCI
+service: AugCDCI
 frameworkVersion: '3'
 
 provider: 
@@ -12,9 +12,9 @@ functions:
   api:
     handler: index.handler
     events:
-      - httpApi
+    -  httpApi:
         path: /
         method: get
 
 plugins:
-  - serverless-offlines
+  - serverless-offline
