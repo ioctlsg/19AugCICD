@@ -6,5 +6,5 @@ This Repo contains
 3) The application allows HTTP get
 4) Package Vulnerability Scan uses both npm aduit & Snyk vulnernility check and monitoring
 
-https://github.com/ioctlsg/19AugCICD/blob/main/Screenshot%202023-08-26%20at%204.03.48%20PM.png
-https://github.com/ioctlsg/19AugCICD/blob/main/Screenshot%202023-08-26%20at%204.03.02%20PM.png
+![alt text](https://github.com/ioctlsg/19AugCICD/blob/main/Screenshot%202023-08-26%20at%204.03.48%20PM.png)
+![alt text](https://github.com/ioctlsg/19AugCICD/blob/main/Screenshot%202023-08-26%20at%204.03.02%20PM.png)
