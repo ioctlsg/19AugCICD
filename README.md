@@ -4,4 +4,5 @@ This Repo contains
 1) node express
 2) AWS serverless application
 3) The application allows HTTP get
-4) Package Vulnerability Scan uses both npm 
+4) Package Vulnerability Scan uses both npm aduit & Snyk vulnernility check and monitoring
+
