@@ -25,6 +25,8 @@ functions:
     -  httpApi:
         path: /
         method: post
-        
+    environment:
+      ACCESS_KEY: ${ssm:SimonOng-Parameter}
+
 plugins:
   - serverless-offline
