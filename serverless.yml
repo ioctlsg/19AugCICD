@@ -17,7 +17,6 @@ functions:
         method: get
     environment:
       ACCESS_KEY: ${ssm:SimonOng-Parameter}
-
 functions:
   api:
     handler: index.handlerB
@@ -25,8 +24,7 @@ functions:
     -  httpApi:
         path: /
         method: post
-    environment:
-      ACCESS_KEY: ${ssm:SimonOng-Parameter}
+    
 
 plugins:
   - serverless-offline
