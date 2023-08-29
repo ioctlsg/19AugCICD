@@ -18,5 +18,13 @@ functions:
     environment:
       ACCESS_KEY: ${ssm:SimonOng-Parameter}
 
+functions:
+  api:
+    handler: index.handlerB
+    events:
+    -  httpApi:
+        path: /
+        method: post
+        
 plugins:
   - serverless-offline
