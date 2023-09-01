@@ -15,7 +15,7 @@ jobs:
     needs: pre-deploy
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.6
       - name: Run installation of dependencies commands
         run: npm install
   unit-testing:
@@ -23,7 +23,7 @@ jobs:
     needs: install-dependencies
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.6
       - name: Run installation of dependencies commands
         run: npm install # all the module require is in package.json
       - name: Run unit testing commands
@@ -33,7 +33,7 @@ jobs:
     needs: unit-testing
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.6
       - name: Run installation of dependencies commands
         run: npm install # all the module require is in package.json
       - name: Run unit testing commands
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: package-audit
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.6
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
