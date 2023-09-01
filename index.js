@@ -3,7 +3,7 @@ module.exports.handler = async (event) => {
       statusCode: 200,
       body: JSON.stringify(
         {
-          message: "Your function executed successfully!",
+          message: "Enjoy FREE 6pc Chicken McNuggets with your first McDelivery purchase using this McDonald's coupon!",
           access_key: process.env.ACCESS_KEY
         },
         null,
