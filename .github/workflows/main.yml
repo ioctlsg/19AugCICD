@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is doing CICD for serverless application
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ dev , main ]
 
 jobs:
   pre-deploy:
@@ -44,6 +44,11 @@ jobs:
          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
          command: monitor
+  get_lambda_function:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get lambda config
+        run: aws cli get-function-url-config --function-name 
   zap_scan:
     runs-on: ubuntu-latest
     name: Scan the webapplication
@@ -51,6 +56,7 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-api-scan@v0.5.0
         with:
+          #run: aws cli
           target: https://9w2itn60t2.execute-api.ap-southeast-1.amazonaws.com/
   merge-branch:
     runs-on: ubuntu-latest
