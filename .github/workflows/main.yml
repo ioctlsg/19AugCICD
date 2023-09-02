@@ -44,11 +44,11 @@ jobs:
          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
          command: monitor
-  get_lambda_function:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get lambda config
-        run: aws cli get-function-url-config --function-name 
+ # get_lambda_function:
+  #  runs-on: ubuntu-latest
+   # steps:
+    #  - name: Get lambda config
+     #   run: aws cli get-function-url-config --function-name 
   zap_scan:
     runs-on: ubuntu-latest
     name: Scan the webapplication
