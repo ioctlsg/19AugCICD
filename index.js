@@ -4,7 +4,7 @@ module.exports.handler = async (event) => {
       body: JSON.stringify(
         {
           message: "Enjoy FREE 6pc Chicken McNuggets with your first McDelivery purchase using this McDonald's coupon!",
-          Coupon code: process.env.ACCESS_KEY
+          Coupon_Code: process.env.ACCESS_KEY
         },
         null,
         2
