@@ -51,7 +51,7 @@ jobs:
      #   run: aws cli get-function-url-config --function-name 
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan the webapplication
+    name: OWASP Scan the webapplication
     steps:
       - name: ZAP Scan
         uses: zaproxy/action-api-scan@v0.5.0
